@@ -202,7 +202,7 @@
     .studentReviews .reviewArrow{margin-top: 33px;}
     .reviewSlide{margin-top: 40px;}
     .reviewSlide:before{top: -103px;left: -33px;width: 126px;height: 126px;background-image: url(../images/img_3d_rocket_m.svg);}
-    .reviewSlide:after{top: -60px;right: -33px;width: 109px;height: 85px;}
+    .reviewSlide:after{top: -60px;right: -33px;width: 109px;height: 85px;background-image: url(../images/img_3d_student_m.svg);}
     .reviewSlide .reviewItem{width: 350px;margin: 0 5px;}
     .reviewItem .text{padding: 0;}
     
