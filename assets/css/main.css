@@ -160,7 +160,7 @@
     .bannerSlide .slick-list{padding-top: 0;}
     .bannerSlide .bannerItem{justify-content: flex-start;height: 260px;padding: 45px 31px 0;border-radius: 30px;background-position: right bottom;background-repeat: no-repeat;}
     .bannerSlide .bannerItem.green{background-image: url(../images/bg_bannerSlide01.svg);}
-    .bannerSlide .bannerItem.purple{background-image: url(../images/bg_bannerSlide02.svg);}
+    .bannerSlide .bannerItem.purple{background-image: url(../images/bg_bannerSlide02.png);}
     .bannerSlide .bannerItem .img{display: none;}
     .reviewSlide:after{top: -126px;right: -60px;width: 203px;height: 157px;background-size: 100%;}
     .reviewSlide:before{top: -187px;left: -91px;width: 292px;height: 292px;background-size: 100%;}
