@@ -46,9 +46,9 @@
 .socialGroup a:nth-child(2){background: linear-gradient(103.17deg, #8B65EA 17.67%, #BE36A8 51.79%, #EDA450 81.9%);}
 .socialGroup a:nth-child(3){background-color: #EF3030;}
 .socialGroup a:before{content: "";display: inline-block;width: 21px;background-repeat: no-repeat;vertical-align: middle;}
-.socialGroup a:nth-child(1):before{height: 22px;margin-right: 12px;background-image: url(../images/icon_social01.png);}
-.socialGroup a:nth-child(2):before{height: 17px;margin-right: 11px;background-image: url(../images/icon_social02.png);}
-.socialGroup a:nth-child(3):before{height: 18px;margin-right: 12px;background-image: url(../images/icon_social03.png);}
+.socialGroup a:nth-child(1):before{height: 22px;margin-right: 12px;background-image: url(../images/icon_social01.svg);}
+.socialGroup a:nth-child(2):before{height: 17px;margin-right: 11px;background-image: url(../images/icon_social02.svg);}
+.socialGroup a:nth-child(3):before{height: 18px;margin-right: 12px;background-image: url(../images/icon_social03.svg);}
 .socialGroup a:after{content: "";position: absolute;right: 20px;top: calc(50% - 6px);display: block;width: 7px;height: 11px;background-image: url(../images/icon_white_arrow.svg);background-repeat: no-repeat;background-repeat: no-repeat;}
 .socialGroup a:hover:after, .socialGroup a:focus:after{-webkit-animation: buttonArrow 1.2s infinite linear;-moz-animation: buttonArrow 1.2s infinite linear;-ms-animation:buttonArrow 1.2s infinite linear;-o-animation: buttonArrow 1.2s infinite linear;animation: buttonArrow 1.2s infinite linear;}
 .socialGroup a span{vertical-align: middle;}
