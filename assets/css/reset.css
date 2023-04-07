@@ -35,6 +35,11 @@ textarea::-webkit-input-placeholder, textarea::-moz-placeholder, textarea:-ms-in
 ::-moz-selection {background-color: #F5A419;color: #000;}
 ::-webkit-selection {background-color: #F5A419;color: #000;}
 
+/* skipNav */
+#skipNav{position: relative;width: 100%;overflow: hidden;}
+#skipNav a{display: block;height: 1px;margin-bottom: -1px;overflow: hidden;text-align: center;text-decoration: none;color: #fff;font-size: 16px;}
+#skipNav a:hover, #skipNav a:focus, #skipNav a:active{display: block;height: 28px;padding: 3px 0;background: none repeat scroll 0 0 #333;}
+
 /* hidden */
 .clearfix:after{content: "";display: block;clear: both;}
 .hidden{display: none;}
