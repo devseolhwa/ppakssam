@@ -51,8 +51,7 @@ header {position: relative;}
 #gnb.active .gnbInner{transform: translateX(0);-webkit-transform: translateX(0);transition-duration: 0.5s;-webkit-transition-duration: 0.5s;}
 
 .userInfo{padding: 49px 20px 40px;text-align: center;}
-.userInfo .userEmoji{display: flex;width: 100px;height: 100px;margin: 0 auto 20px;background: #fff;border: 1px solid #eee;border-radius: 100%;box-sizing: border-box;align-items: center;justify-content: center;}
-.userInfo .userEmoji img{width: 56px;height: 56px;}
+.userInfo .userEmoji{display: flex;width: 100px;height: 100px;margin: 0 auto 20px;background: #fff;border: 1px solid #eee;border-radius: 100%;box-sizing: border-box;align-items: center;justify-content: center;overflow: hidden;}
 .userInfo p{margin-bottom: 25px;font-weight: 400;font-size: 17px;line-height: 26px;text-align: center;letter-spacing: -0.8px;color: #333;}
 .userInfo p span{border-bottom: 1px solid #F5A419;color: #F5A419;font-weight: 600;}
 .userInfo .btnLogin{display: block;width: 100%;height: 40px;background: #F5A419;border-radius: 10px;font-size: 13px;color: #fff;font-weight: 500;line-height: 19px;letter-spacing: -0.6px;}
