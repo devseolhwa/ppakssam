@@ -106,16 +106,16 @@
 .reviewItem .emoji{display: flex;width: 50px;height: 50px;margin: -25px auto 6px;background: #fff;border: 1px solid #eee;border-radius: 100%;box-sizing: border-box;align-items: center;justify-content: center;overflow: hidden;}
 .reviewItem .emoji img{width: 28px;height: 28px;}
 .reviewItem .score{width: 65px;height: 10px;margin: 0 auto 10px;background-position: center;background-repeat: no-repeat;overflow: hidden;text-indent: -9999px;white-space: nowrap;}
-.reviewItem .score.score100{background-image: url(../images/img_score100.png);}
-.reviewItem .score.score90{background-image: url(../images/img_score90.png);}
-.reviewItem .score.score80{background-image: url(../images/img_score80.png);}
-.reviewItem .score.score70{background-image: url(../images/img_score70.png);}
-.reviewItem .score.score60{background-image: url(../images/img_score60.png);}
-.reviewItem .score.score50{background-image: url(../images/img_score50.png);}
-.reviewItem .score.score40{background-image: url(../images/img_score40.png);}
-.reviewItem .score.score30{background-image: url(../images/img_score30.png);}
-.reviewItem .score.score20{background-image: url(../images/img_score20.png);}
-.reviewItem .score.score10{background-image: url(../images/img_score10.png);}
+.reviewItem .score.score100{background-image: url(../images/img_score100.svg);}
+.reviewItem .score.score90{background-image: url(../images/img_score90.svg);}
+.reviewItem .score.score80{background-image: url(../images/img_score80.svg);}
+.reviewItem .score.score70{background-image: url(../images/img_score70.svg);}
+.reviewItem .score.score60{background-image: url(../images/img_score60.svg);}
+.reviewItem .score.score50{background-image: url(../images/img_score50.svg);}
+.reviewItem .score.score40{background-image: url(../images/img_score40.svg);}
+.reviewItem .score.score30{background-image: url(../images/img_score30.svg);}
+.reviewItem .score.score20{background-image: url(../images/img_score20.svg);}
+.reviewItem .score.score10{background-image: url(../images/img_score10.svg);}
 .reviewItem .info{margin-bottom: 1px;font-weight: 500;font-size: 14px;line-height: 20px;text-align: center;letter-spacing: -0.6px;color: #888;}
 .reviewItem .title{padding-bottom: 24px;margin-bottom: 20px;border-bottom: 1px solid #eee;box-sizing: border-box;font-weight: 600;font-size: 18px;line-height: 25px;text-align: center;color: #222;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .reviewItem .text{padding: 0 15px;font-weight: 400;font-size: 14px;line-height: 20px;text-align: center;letter-spacing: -0.8px;color: #777;word-break: keep-all;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;white-space: normal;line-height: 1.4;height: 4.2em;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
