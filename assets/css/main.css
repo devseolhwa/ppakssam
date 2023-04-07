@@ -55,7 +55,7 @@
 
 .todayEnglish{position: relative;padding: 41px 0 70px;box-sizing: border-box;}
 .todayEnglish .inner{position: relative;}
-.todayEnglish .inner:before{content: "";position: absolute;top: -55px;right: -256px;display: block;width: 518px;height: 278px;background-image: url(../images/img_3d_hands.svg);background-position: center;background-repeat: no-repeat;box-sizing: border-box;-webkit-animation: handsAni 4s infinite;-moz-animation: handsAni 4s infinite;-ms-animation: handsAni 4s infinite;-o-animation: handsAni 4s infinite;animation: handsAni 4s infinite;}
+.todayEnglish .inner:before{content: "";position: absolute;top: -55px;right: -256px;display: block;width: 518px;height: 278px;background-image: url(../images/img_3d_hands.png);background-position: center;background-repeat: no-repeat;box-sizing: border-box;-webkit-animation: handsAni 4s infinite;-moz-animation: handsAni 4s infinite;-ms-animation: handsAni 4s infinite;-o-animation: handsAni 4s infinite;animation: handsAni 4s infinite;}
 .mainTitle{font-size: 16px;color: #F5A419;line-height: 24px;font-weight: 700;letter-spacing: -0.6px;}
 .mainText{font-size: 28px;color: #000;line-height: 44px;font-weight: 600;letter-spacing: -0.6px;word-break: keep-all;}
 .todayEngSlideWrap{margin: 41px 0 71px 80px;}
@@ -95,8 +95,8 @@
 .studentReviews .mainTitle + .mainText{display: block;margin-top: 22px;}
 .studentReviews .reviewArrow{margin-top: 35px;}
 .reviewSlide{margin-top: 60px;}
-.reviewSlide:before{content: "";position: absolute;top: -248px;left: -283px;display: block;width: 507px;height: 507px;background-image: url(../images/img_3d_rocket.svg);background-position: center;background-repeat: no-repeat;box-sizing: border-box;-webkit-animation: rocketAni 6s infinite;-moz-animation: rocketAni 6s infinite;-ms-animation: rocketAni 6s infinite;-o-animation: rocketAni 6s infinite;animation: rocketAni 6s infinite;}
-.reviewSlide:after{content: "";position: absolute;top: -227px;right: -38px;display: block;width: 349px;height: 269px;background-image: url(../images/img_3d_student.svg);background-position: center;background-repeat: no-repeat;box-sizing: border-box;z-index: 0;}
+.reviewSlide:before{content: "";position: absolute;top: -248px;left: -283px;display: block;width: 507px;height: 507px;background-image: url(../images/img_3d_rocket.png);background-position: center;background-repeat: no-repeat;box-sizing: border-box;-webkit-animation: rocketAni 6s infinite;-moz-animation: rocketAni 6s infinite;-ms-animation: rocketAni 6s infinite;-o-animation: rocketAni 6s infinite;animation: rocketAni 6s infinite;}
+.reviewSlide:after{content: "";position: absolute;top: -227px;right: -38px;display: block;width: 349px;height: 269px;background-image: url(../images/img_3d_student.png);background-position: center;background-repeat: no-repeat;box-sizing: border-box;z-index: 0;}
 .reviewSlide .slick-list{padding-top: 25px !important;z-index: 99;}
 .reviewSlide .reviewItem{position: relative;width: 400px;margin: 0 20px;background: #fef6e8;}
 .reviewSlide .reviewItem:after{content: "";position: absolute;top: calc(50% - 36px);left: calc(50% - 36px);display: block;width: 72px;height: 72px;background-color: rgba(245, 164, 25, 0.9);background-image: url(../images/icon_more.svg);background-position: center;background-repeat: no-repeat;border-radius: 100%;box-sizing: border-box;opacity: 0;visibility: hidden;transform: translateY(30px);-webkit-transform: translateY(30px);transition-duration: 0.5s;-webkit-transition-duration: 0.5s;pointer-events: none;}
@@ -183,7 +183,7 @@
     .socialGroup a:after{right: 15px;}
 
     .todayEnglish{padding: 50px 0 40px 20px;}
-    .todayEnglish .inner:before{top: 120px;right: -2%;width: 120px;height: 65px;background-image: url(../images/img_3d_hands.png);}
+    .todayEnglish .inner:before{top: 120px;right: -2%;width: 120px;height: 65px;}
     .todayEngSlideWrap{margin: 21px 0 55px 0;}
     .mainText{font-size: 22px;line-height: 30px;}
     .todayEngSlideWrap .mainText{display: block;padding-right: 20px;box-sizing: border-box;}
@@ -200,8 +200,8 @@
     .studentReviews .mainTitle + .mainText{margin-top: 12px;padding: 0 20px;}
     .studentReviews .reviewArrow{margin-top: 33px;}
     .reviewSlide{margin-top: 40px;}
-    .reviewSlide:before{top: -103px;left: -33px;width: 126px;height: 126px;background-image: url(../images/img_3d_rocket_m.png);}
-    .reviewSlide:after{top: -60px;right: -33px;width: 109px;height: 85px;background-image: url(../images/img_3d_student_m.png);}
+    .reviewSlide:before{top: -103px;left: -33px;width: 126px;height: 126px;}
+    .reviewSlide:after{top: -60px;right: -33px;width: 109px;height: 85px;}
     .reviewSlide .reviewItem{width: 350px;margin: 0 5px;}
     .reviewItem .text{padding: 0;}
     
