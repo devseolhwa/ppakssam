@@ -22,4 +22,7 @@ $(document).on("mouseenter focus", ".nav > ul > li > a", function () {
         }
     });
     return false;
- });
+});
+$(".gnbInner ul ul").each(function () {
+    $(this).parent("li").addClass("ulHas");
+});
