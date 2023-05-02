@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PPAK SSAM : 빡쌤이 알려주는 진짜 말하는 영어</title>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/layout.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/contents.css">
     
 </head>
 <body>
@@ -21,7 +21,7 @@
     <div class="wrap">
         <header>
             <div class="inner">
-                <h1 class="logo"><a href="/" title="메인페이지로"><img src="assets/images/logo.svg" alt="PPAK SSAM 빡쌤이 알려주는 진짜 말하는 영어"></a></h1>
+                <h1 class="logo"><a href="/" title="메인페이지로"><img src="../assets/images/logo.svg" alt="PPAK SSAM 빡쌤이 알려주는 진짜 말하는 영어"></a></h1>
                 <div class="headerMenu">
                     <div class="topMenu">
                         <a href="#"><span>나의 강의실</span></a>
@@ -57,7 +57,7 @@
                         <div id="gnb">
                             <div class="gnbInner">
                                 <div class="userInfo">
-                                    <div class="userEmoji"><img src="assets/images/img_emoji00.png" alt=""></div>
+                                    <div class="userEmoji"><img src="../assets/images/img_emoji00.png" alt=""></div>
                                     <!-- 로그인 전 -->
                                     <p>안녕하세요. 반갑습니다.<br />로그인 후 빡쌤과 함께하세요!</p>
                                     <button type="button" class="btnLogin">로그인</button>
@@ -101,16 +101,24 @@
         </header>
 
         <div class="container">
-            <div id="contents">
+            <!-- [전달사항] #contents 구분 .main/.sub -->
+            <div id="contents" class="sub">
                 <div class="inner">
-                    
-                    <audio controls>
-                        <source src="https://ccrma.stanford.edu/~jos/mp3/harpsi-cs.mp3" type="audio/mp3">
-                        <!-- <source src="https://ccrma.stanford.edu/~jos/mp3/harpsi-cs.mp3" type="audio/ogg"> -->
-                        audio 오류 시 대체 텍스트
-                    </audio>
+                    <div class="subTitle">
+                        <h4>고객센터</h4>
+                        <p>빡쌤과 함께라면 숨어있는 가능성을 발견합니다.</p>
+                        <ul class="menuType01">
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#" class="on">1:1 문의</a></li>
+                        </ul>
+                    </div>
 
-                </div>
+                    얖
+                    
+
+                </div><!-- inner end -->
             </div><!-- contents end -->
         </div><!-- container end -->
 
@@ -125,10 +133,10 @@
         </footer>
     </div><!-- wrap end -->
 
-    <script src="assets/js/lib/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/lib/slick.min.js"></script>
-    <script src="assets/js/ui.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/lib/slick.min.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    <script src="../assets/js/contents.js"></script>
 
 </body>
 </html>
