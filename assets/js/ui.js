@@ -26,3 +26,11 @@ $(document).on("mouseenter focus", ".nav > ul > li > a", function () {
 $(".gnbInner ul ul").each(function () {
     $(this).parent("li").addClass("ulHas");
 });
+
+// popup
+function popupOpen(openTarget) {
+    $(openTarget).fadeIn("slow").addClass("show");
+}
+function popupClose(closeTarget) {
+    $(closeTarget).fadeOut("slow").removeClass("show");
+}

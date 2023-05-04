@@ -111,12 +111,62 @@
                             <li><a href="#">고객센터</a></li>
                             <li><a href="#">공지사항</a></li>
                             <li><a href="#">FAQ</a></li>
-                            <li><a href="#" class="on">1:1 문의</a></li>
+                            <li class="on"><a href="#">1:1 문의</a></li>
                         </ul>
                     </div>
 
-                    얖
-                    
+                    <div class="formPage">
+                        <ul class="formList">
+                            <li>
+                                <div class="full">
+                                    <label for="bdQType">문의유형<span class="iconRequire"><em class="blind">필수항목</em></span></label>
+                                    <select name="bdQType" id="bdQType">
+                                        <option value="" selected disabled hidden>문의유형을 선택해주세요.</option>
+                                        <option value="">개인수강문의</option>
+                                        <option value="">기업수강문의</option>
+                                        <option value="">기타문의</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="full">
+                                    <label for="bdName">이름<span class="iconRequire"><em class="blind">필수항목</em></span></label>
+                                    <input type="text" id="bdName" placeholder="이름을 입력해주세요.">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="full">
+                                    <label for="bdNumber">연락처<span class="iconRequire"><em class="blind">필수항목</em></span></label>
+                                    <input type="text" id="bdNumber" placeholder="연락처를 입력해주세요.">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="full">
+                                    <label for="bdEmail">이메일</label>
+                                    <input type="text" id="bdEmail" placeholder="이메일을 입력해주세요.">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="full">
+                                    <label for="bdContents">문의내역<span class="iconRequire"><em class="blind">필수항목</em></span></label>
+                                    <textarea id="bdContents" name="bdContents" placeholder="문의사항을 작성해주세요." style="height: 330px;"></textarea>
+                                </div>
+                            </li>
+                        </ul><!-- formList end -->
+                        <div class="btnGroup mb15">
+                            <!-- 
+                                [전달사항] 
+                                # 등록시 얼럿 메시지
+                                1:1 문의가 등록되었습니다.
+                                최대한 빠르게 회신 드리겠습니다.
+                                감사합니다.
+
+                                # 필수 미입력 얼럿 메시지
+                                ㅇㅇㅇ을/를 입력해주세요.
+                            -->
+                            <button type="button" class="btn btnLg btnBgYellow">1:1문의 등록</button>
+                        </div>
+                    </div><!-- formPage end -->
 
                 </div><!-- inner end -->
             </div><!-- contents end -->

@@ -20,17 +20,17 @@ strong, b {font-weight: 600;}
 caption, legend {position: absolute;top: -9999px;left: -9999px;}
 input, textarea, select, label, button {display: inline-block;vertical-align: middle;font-size: inherit;font-family: inherit;line-height: inherit;}
 input, textarea {resize: none;border: 1px solid #ddd;box-shadow: none;box-sizing: border-box;background: #fff;}
-input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="number"] {height: 44px;padding: 0 15px;border: 1px solid #ddd;box-sizing: border-box;font-size: 14px;color: #222;}
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="number"] {height: 44px;padding: 0 15px;border: 1px solid #ddd;box-sizing: border-box;font-size: 14px;color: #333;}
 input[type="checkbox"], input[type="radio"] {padding: 0;border: 0;border-radius: 0;box-sizing: border-box;}
 input[type="image"] {border: 0 none;}
 input[type="text"], img, select {vertical-align: middle;}
-select {height: 44px;padding: 0 22px 0 15px;border: 1px solid #ddd;box-sizing: border-box;-webkit-appearance: none;-moz-appearance: none;appearance: none;font-size: 14px;color: #444;}
+select{height: 44px;padding: 0 25px 0 15px;background-image: url(../images/icon_select.svg);background-position: right 15px center;background-repeat: no-repeat;border: 1px solid #ddd;box-sizing: border-box;-webkit-appearance: none;-moz-appearance: none;appearance: none;font-size: 14px;color: #333;}
 select::-ms-expand {display: none;}
-textarea{padding: 12px 15px;box-sizing: border-box;font-size: 15px;color: #555;}
+textarea{padding: 15px;box-sizing: border-box;font-size: 14px;color: #333;}
 button, input[type="button"], input[type="reset"], input[type="submit"] {overflow: visible;-webkit-appearance: button;cursor: pointer;}
 button {border: 0;background-color: transparent;}
-select[disabled], input[disabled], select[readonly], input[readonly]{background-color: #F3F3F3;color: #222;}
-textarea::-webkit-input-placeholder, textarea::-moz-placeholder, textarea:-ms-input-placeholder, textarea::-ms-input-placeholder, input::-webkit-input-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, input::-ms-input-placeholder{font-size: 14px;color: #bbb;}
+select[disabled], input[disabled], select[readonly], input[readonly]{background-color: #F9F9F9;color: #333;}
+textarea::-webkit-input-placeholder, textarea::-moz-placeholder, textarea:-ms-input-placeholder, textarea::-ms-input-placeholder, input::-webkit-input-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, input::-ms-input-placeholder{font-size: 14px;color: #888;}
 ::selection{background-color: rgba(245, 164, 25, 0.8);color: #000;}
 ::-moz-selection {background-color: rgba(245, 164, 25, 0.8);color: #000;}
 ::-webkit-selection {background-color: rgba(245, 164, 25, 0.8);color: #000;}
