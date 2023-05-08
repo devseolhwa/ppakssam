@@ -133,13 +133,13 @@
                         </div>
                         <style>
                             .storePin{position: relative;bottom: 55px;border-radius: 10px;-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);}
-                            .storePin:after{content:"";position: absolute;left: 50%;bottom: -12px;width: 23px;height: 12px;margin-left: -12px;background: url(../images/contents/icon_pinAfter.png)}
-                            .storePin a{display: block;overflow: hidden;background: #F5A419 url(../images/contents/icon_arrow_white.svg) no-repeat right 15px center;border-radius: 10px;text-align: center;}
+                            .storePin:after{content:"";position: absolute;left: 50%;bottom: -12px;width: 23px;height: 12px;margin-left: -12px;background: url(../assets/images/contents/icon_pinAfter.png)}
+                            .storePin a{display: block;overflow: hidden;background: #F5A419 url(../assets/images/contents/icon_arrow_white.svg) no-repeat right 15px center;border-radius: 10px;text-align: center;}
                             .storePin .name{display: block;margin-right: 38px;padding: 11px 15px;background: #fff;font-size: 13px;color: #333;line-height: 16px;font-weight: 700;letter-spacing: -0.6px;}
                             </style>
                         <div id="map" style="width:100%;height:480;"></div>
 
-                        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5efe24a9c787173d06528245f235fc9b"></script>
+                        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=63d8ce27dd2b619c8f2c07177dcd8b96"></script>
                         <script>
                         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
                         mapOption = { 
@@ -149,7 +149,7 @@
 
                         var map = new kakao.maps.Map(mapContainer, mapOption);
 
-                        var imageSrc = "assets/images/contents/icon_pin.svg", // 마커이미지의 주소입니다    
+                        var imageSrc = "../assets/images/contents/icon_pin.svg", // 마커이미지의 주소입니다    
                             imageSize = new kakao.maps.Size(36, 41), // 마커이미지의 크기입니다
                             imageOption = {offset: new kakao.maps.Point(18, 41)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
 
