@@ -11,10 +11,6 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/contents.css">
     
-    <script src="../assets/js/lib/jquery-1.12.4.min.js"></script>
-    <script src="../assets/js/lib/slick.min.js"></script>
-    <script src="../assets/js/ui.js"></script>
-    <script src="../assets/js/contents.js"></script>
 </head>
 <body>
     <div id="skipNav">
@@ -136,61 +132,58 @@
                             </ul>
                         </div>
                         <style>
-                            .customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
-                            .customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
-                            .customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #d95050;background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
-                            .customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;font-size:14px;font-weight:bold;}
-                            .customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+                            .storePin{position: relative;bottom: 55px;border-radius: 10px;-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);}
+                            .storePin:after{content:"";position: absolute;left: 50%;bottom: -12px;width: 23px;height: 12px;margin-left: -12px;background: url(../assets/images/contents/icon_pinAfter.png)}
+                            .storePin a{display: block;overflow: hidden;background: #F5A419 url(../assets/images/contents/icon_arrow_white.svg) no-repeat right 15px center;border-radius: 10px;text-align: center;}
+                            .storePin .name{display: block;margin-right: 38px;padding: 11px 15px;background: #fff;font-size: 13px;color: #333;line-height: 16px;font-weight: 700;letter-spacing: -0.6px;}
                             </style>
-                            </head>
-                            <body>
-                            <div id="map" style="width:100%;height:350px;"></div>
-                            
-                            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=63d8ce27dd2b619c8f2c07177dcd8b96"></script>
-                            <script>
-                            var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-                              mapOption = { 
-                                    center: new kakao.maps.LatLng(37.54699, 127.09598), // 지도의 중심좌표
-                                    level: 4 // 지도의 확대 레벨
-                                };
-                            
-                            var map = new kakao.maps.Map(mapContainer, mapOption);
-                            
-                            var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png', // 마커이미지의 주소입니다    
-                                imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
-                                imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
-                            
-                            // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-                            var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                                markerPosition = new kakao.maps.LatLng(37.54699, 127.09598); // 마커가 표시될 위치입니다
-                            
-                            // 마커를 생성합니다
-                            var marker = new kakao.maps.Marker({
-                              position: markerPosition,
-                              image: markerImage // 마커이미지 설정 
-                            });
-                            
-                            // 마커가 지도 위에 표시되도록 설정합니다
-                            marker.setMap(map);  
-                            
-                            // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-                            var content = '<div class="customoverlay">' +
-                                '  <a href="https://map.kakao.com/link/map/11394059" target="_blank">' +
-                                '    <span class="title">구의야구공원</span>' +
-                                '  </a>' +
-                                '</div>';
-                            
-                            // 커스텀 오버레이가 표시될 위치입니다 
-                            var position = new kakao.maps.LatLng(37.54699, 127.09598);  
-                            
-                            // 커스텀 오버레이를 생성합니다
-                            var customOverlay = new kakao.maps.CustomOverlay({
-                                map: map,
-                                position: position,
-                                content: content,
-                                yAnchor: 1 
-                            });
-                            </script>
+                        <div id="map" style="width:100%;height:480;"></div>
+
+                        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=63d8ce27dd2b619c8f2c07177dcd8b96"></script>
+                        <script>
+                        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                        mapOption = { 
+                                center: new kakao.maps.LatLng(37.54699, 127.09598), // 지도의 중심좌표
+                                level: 4 // 지도의 확대 레벨
+                            };
+
+                        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+                        var imageSrc = "../assets/images/contents/icon_pin.svg", // 마커이미지의 주소입니다    
+                            imageSize = new kakao.maps.Size(36, 41), // 마커이미지의 크기입니다
+                            imageOption = {offset: new kakao.maps.Point(18, 41)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+                        // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+                        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+                            markerPosition = new kakao.maps.LatLng(37.54699, 127.09598); // 마커가 표시될 위치입니다
+
+                        // 마커를 생성합니다
+                        var marker = new kakao.maps.Marker({
+                        position: markerPosition,
+                        image: markerImage // 마커이미지 설정 
+                        });
+
+                        // 마커가 지도 위에 표시되도록 설정합니다
+                        marker.setMap(map);  
+
+                        // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+                        var content = '<div class="storePin">' +
+                            '  <a href="https://map.kakao.com/link/map/" target="_blank">' +
+                            '    <span class="name">빡쌤 잉글리쉬 센터</span>' +
+                            '  </a>' +
+                            '</div>';
+
+                        // 커스텀 오버레이가 표시될 위치입니다 
+                        var position = new kakao.maps.LatLng(37.54699, 127.09598);  
+
+                        // 커스텀 오버레이를 생성합니다
+                        var customOverlay = new kakao.maps.CustomOverlay({
+                            map: map,
+                            position: position,
+                            content: content,
+                            yAnchor: 1 
+                        });
+                        </script>
                        
                     </div><!-- mapPage end -->
 
@@ -208,6 +201,11 @@
             <p class="footerCopy">COPYRIGHT © <span>PPAK SSAM.</span> ALL RIGHT RESERVED</p>
         </footer>
     </div><!-- wrap end -->
+
+    <script src="../assets/js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/lib/slick.min.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    <script src="../assets/js/contents.js"></script>
 
 </body>
 </html>
