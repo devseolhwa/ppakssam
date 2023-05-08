@@ -8,6 +8,10 @@
 .menuType01 li + li:before{content: "";display: inline-block;width: 1px;height: 10px;margin: 0 28px;background: #B6B6B6;vertical-align: 0;}
 .menuType01 li a{display: inline-block;font-size: 16px;color: #222;font-weight: 400;line-height: 23px;text-align: center;letter-spacing: -0.6px;}
 .menuType01 li.on a{color: #F5A419;font-weight: 600;}
+.menuType02{display: flex;align-items: center;justify-content: center;flex-direction: row;flex-wrap: wrap;margin-top: 30px;}
+.menuType02 li + li{margin-left: 10px;}
+.menuType02 li a{display: inline-block;padding: 12px 22px;background: #FFFFFF;border: 1px solid #D3D3D3;border-radius: 30px;box-sizing: border-box;font-size: 16px;color: #333;font-weight: 700;text-align: center;letter-spacing: -0.6px;}
+.menuType02 li.on a{background: #F5A419;border-color: #F5A419;color: #fff;}
 
 /* btn */
 .btnGroup{position: relative;text-align: center;font-size: 0;}
@@ -311,6 +315,8 @@
     .menuType01{margin-top: 13px;}
     .menuType01 li + li:before{margin: 0 20px;}
     .menuType01 li a{font-size: 14px;line-height: 20px;}
+    .menuType02{margin-top: 15px;}
+    .menuType02 li a{padding: 9px 18px;font-size: 13px;}
 
     .btn + .btn{margin-left: 4px;}
     .btnMd{min-width: 64px;font-size: 13px;}
