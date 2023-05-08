@@ -62,6 +62,11 @@
 .instagramPage .instagramList li a{position: relative;display: block;width: 100%;padding: 100% 0 0;}
 .instagramPage .instagramList li a:before{content: "";position: absolute;left: 30px;top: 20px;display: block;width: 26px;height: 26px;background-image: url(../images/contents/icon_instagram.svg);background-repeat: no-repeat;z-index: 1;}
 .instagramPage .instagramList li a img{position: absolute;top: 0;left: 0;width: 100%;height: 100%;object-fit: cover;}
+.instagramImg{position: relative;display: block;width: 100%;padding: 100% 0 0;}
+.instagramImg img{position: absolute;top: 0;left: 0;width: 100%;height: 100%;object-fit: cover;}
+.instagramText{display: flex;align-items: center;flex-direction: row;justify-content: space-between;margin-top: 28px;}
+.instagramText p{width: calc(100% - 160px);font-size: 15px;color: #FFFFFF;font-weight: 400;line-height: 18px;word-break: keep-all;}
+.instagramText a{width: 102px;padding-right: 25px;margin-right: 6px;font-size: 15px;color: #FFFFFF;font-weight: 400;line-height: 18px;opacity: 0.6;background-image: url(../images/contents/icon_instagram_arrow.svg);background-position: right center;background-repeat: no-repeat;box-sizing: border-box;}
 
 .todayEngPage{position: relative;margin: 33px 0 28px 0;}
 .todayEngPage:before{content: "";position: absolute;top: -80px;right: -170px;display: block;width: 518px;height: 278px;background-image: url(../images/img_3d_hands.png);background-position: center;background-repeat: no-repeat;box-sizing: border-box;-webkit-animation: handsAni 4s infinite;-moz-animation: handsAni 4s infinite;-ms-animation: handsAni 4s infinite;-o-animation: handsAni 4s infinite;animation: handsAni 4s infinite;}
@@ -112,21 +117,35 @@
 .reviewList .reviewItem a:hover, .reviewList .reviewItem a:focus{opacity: 0.7;}
 .reviewItem .emoji{display: flex;width: 50px;height: 50px;margin: -25px auto 6px;background: #fff;border: 1px solid #eee;border-radius: 100%;box-sizing: border-box;align-items: center;justify-content: center;overflow: hidden;}
 .reviewItem .emoji img{width: 28px;height: 28px;}
-.reviewItem .score{width: 65px;height: 10px;margin: 0 auto 10px;background-position: center;background-repeat: no-repeat;overflow: hidden;text-indent: -9999px;white-space: nowrap;}
-.reviewItem .score.score100{background-image: url(../images/img_score100.svg);}
-.reviewItem .score.score90{background-image: url(../images/img_score90.svg);}
-.reviewItem .score.score80{background-image: url(../images/img_score80.svg);}
-.reviewItem .score.score70{background-image: url(../images/img_score70.svg);}
-.reviewItem .score.score60{background-image: url(../images/img_score60.svg);}
-.reviewItem .score.score50{background-image: url(../images/img_score50.svg);}
-.reviewItem .score.score40{background-image: url(../images/img_score40.svg);}
-.reviewItem .score.score30{background-image: url(../images/img_score30.svg);}
-.reviewItem .score.score20{background-image: url(../images/img_score20.svg);}
-.reviewItem .score.score10{background-image: url(../images/img_score10.svg);}
+.score{width: 65px;height: 10px;margin: 0 auto 10px;background-position: center;background-repeat: no-repeat;overflow: hidden;text-indent: -9999px;white-space: nowrap;}
+.score.score100{background-image: url(../images/img_score100.svg);}
+.score.score90{background-image: url(../images/img_score90.svg);}
+.score.score80{background-image: url(../images/img_score80.svg);}
+.score.score70{background-image: url(../images/img_score70.svg);}
+.score.score60{background-image: url(../images/img_score60.svg);}
+.score.score50{background-image: url(../images/img_score50.svg);}
+.score.score40{background-image: url(../images/img_score40.svg);}
+.score.score30{background-image: url(../images/img_score30.svg);}
+.score.score20{background-image: url(../images/img_score20.svg);}
+.score.score10{background-image: url(../images/img_score10.svg);}
 .reviewItem .info{margin-bottom: 1px;font-weight: 500;font-size: 14px;line-height: 20px;text-align: center;letter-spacing: -0.6px;color: #888;}
-.reviewItem .title{padding-bottom: 24px;margin-bottom: 20px;border-bottom: 1px solid #eee;box-sizing: border-box;font-weight: 600;font-size: 18px;line-height: 25px;text-align: center;color: #222;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
-.reviewItem .text{padding: 0 15px;font-weight: 400;font-size: 14px;line-height: 20px;text-align: center;letter-spacing: -0.8px;color: #777;word-break: keep-all;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;white-space: normal;line-height: 1.4;height: 4.2em;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
-.reviewItem .date{margin-top: 12px;font-weight: 400;font-size: 13px;line-height: 17px;letter-spacing: -0.6px;color: #ADADAD;text-align: center;}
+.reviewItem .title{padding-bottom: 24px;margin-bottom: 20px;border-bottom: 1px solid #eee;box-sizing: border-box;font-size: 18px;color: #222;font-weight: 600;line-height: 25px;text-align: center;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.reviewItem .text{padding: 0 15px;font-size: 14px;color: #777;font-weight: 400;line-height: 20px;text-align: center;letter-spacing: -0.8px;word-break: keep-all;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;white-space: normal;line-height: 1.4;height: 4.2em;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
+.reviewItem .date{margin-top: 12px;font-size: 13px;color: #ADADAD;font-weight: 400;line-height: 17px;letter-spacing: -0.6px;text-align: center;}
+.reviewPopup{padding: 0 60px 30px;border: 1px solid #eee;box-sizing: border-box;}
+.reviewInfo{margin-bottom: 18px;}
+.reviewInfo .emoji{display: flex;width: 50px;height: 50px;margin: -25px 0 6px;background: #fff;border: 1px solid #eee;border-radius: 100%;box-sizing: border-box;align-items: center;justify-content: center;overflow: hidden;}
+.reviewInfo .emoji img{width: 28px;height: 28px;}
+.reviewInfo .score{margin: 0 0 10px;}
+.reviewInfo .info{margin-bottom: 1px;font-weight: 500;font-size: 14px;line-height: 20px;text-align: left;letter-spacing: -0.6px;color: #888;}
+.reviewInfo .bundle{display: flex;justify-content: space-between;align-items: flex-end;}
+.reviewInfo .bundle .title{font-size: 18px;color: #222;font-weight: 600;line-height: 25px;text-align: left;word-break: keep-all;}
+.reviewInfo .bundle .date{font-size: 13px;color: #ADADAD;font-weight: 400;line-height: 17px;letter-spacing: -0.6px;}
+.reviewText{max-height: 575px;overflow-y: auto;padding-bottom: 20px;border-top: 1px solid #e0e0e0;border-bottom: 1px solid #e0e0e0;box-sizing: border-box;}
+.reviewText strong{margin-top: 30px;display: block;font-size: 15px;color: #222222;font-weight: 600;line-height: 20px;letter-spacing: -0.8px;word-break: keep-all;}
+.reviewText p{font-size: 14px;color: #777777;font-weight: 400;line-height: 23px;letter-spacing: -0.8px;word-break: keep-all;}
+.reviewText strong + p{margin-top: 10px;}
+
 
 /* paging */
 .paging {margin-top: 40px;text-align: center;font-size: 0;}
@@ -266,6 +285,10 @@
     .reviewList .reviewItem{width: calc(50% - 20px);margin: 55px 10px 0;}
     .reviewList .reviewItem:nth-child(-n+3){margin-top: 55px;}
     .reviewList .reviewItem:nth-child(-n+2){margin-top: 0;}
+    .reviewPopup{padding: 0 30px 30px;}
+    .reviewInfo .bundle{display: flex;align-items: flex-start;flex-direction: column;}
+    .reviewInfo .bundle .date{margin-top: 6px;}
+    .reviewText{max-height: 375px;}
     .mapPage .mapText{display: flex;flex-direction: column;align-items: center;}
     .mapPage .mapText strong{text-align: center;}
     .mapPage .mapText ul{margin-top: 20px;}
@@ -311,6 +334,8 @@
     .instagramPage .instagramList li:nth-child(-n+3){margin-top: 20px;}
     .instagramPage .instagramList li:first-child{margin-top: 0;}
     .instagramPage .instagramList li a:before{top: 15px;left: 15px;}
+    .instagramText p{width: calc(100% - 120px);font-size: 14px;line-height: 17px;}
+    .instagramText a{width: 97px;font-size: 14px;}
 
     .todayEngPage{margin: 8px 0 11px;}
     .todayEngPage:before{right: -36px;top: -70px;width: 168px;height: 90px;}
@@ -348,7 +373,7 @@
     .boardListPage .total{padding: 17px 0;font-size: 13px;line-height: 16px;}
     .boardList .boardItem + .boardItem{margin-top: 10px;}
     .boardList .boardItem a{padding: 19px 15px;}
-    .boardList .boardItem .title{width: calc(100% - 80px);padding-left: 0;font-size: 13px;line-height: 16px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+    .boardList .boardItem .title{width: calc(100% - 80px);padding-left: 0;font-size: 13px;line-height: 16px;}
     .boardList .boardItem .date{width: auto;font-size: 13px;}
     .boardSearch{margin-top: 30px;padding: 10px 11px;}
     .boardSearch select{width: 86px;font-size: 12px;}

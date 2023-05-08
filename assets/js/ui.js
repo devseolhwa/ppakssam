@@ -29,8 +29,8 @@ $(".gnbInner ul ul").each(function () {
 
 // popup
 function popupOpen(openTarget) {
-    $(openTarget).fadeIn("slow").addClass("show");
+    $(openTarget).addClass("show");
 }
 function popupClose(closeTarget) {
-    $(closeTarget).fadeOut("slow").removeClass("show");
+    $(closeTarget).removeClass("show");
 }
