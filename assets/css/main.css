@@ -161,7 +161,6 @@
     .reviewSlide:after{top: -126px;right: -60px;width: 203px;height: 157px;background-size: 100%;}
     .reviewSlide:before{top: -187px;left: -91px;width: 292px;height: 292px;background-size: 100%;}
 
-    
 }
 @media screen and (max-width: 767px){
     .visual{padding: 0 20px;}
@@ -202,13 +201,9 @@
     .reviewSlide .reviewItem{width: 350px;margin: 0 5px;}
     .reviewItem .text{padding: 0;}
     
-    
 }
 @media screen and (max-width: 375px){
     .bannerSlide .bannerItem.purple{background-position: center bottom;}
-}
-@media screen and (max-width: 320px){
-    
 }
 
 @-webkit-keyframes prevArrow {

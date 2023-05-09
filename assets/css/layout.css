@@ -108,7 +108,6 @@ footer{padding: 37px 20px 34px;text-align: center;box-sizing: border-box;}
 .popupWrap.show .popupCenter{-webkit-animation: slideInUp 0.5s 50ms;-moz-animation: slideInUp 0.5s 50ms;-ms-animation: slideInUp 0.5s 50ms;-o-animation: slideInUp 0.5s 50ms;animation: slideInUp 0.5s 50ms;-webkit-animation-fill-mode: backwards;animation-fill-mode: backwards;}
 .btnPopupClose{position: absolute;right: -86px;top: 0;width: 66px;height: 63px;background-color: #fff;background-image: url(../images/icon_popup_close.svg);background-position: center;background-repeat: no-repeat;overflow: hidden;text-indent: -9999px;white-space: nowrap;}
 
-
 @media screen and (max-width: 1600px){
     body:before, body:after, .wrap:before, .wrap::after{display: none;}
 }

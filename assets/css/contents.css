@@ -51,7 +51,7 @@
 .profilePage .profileText .since{margin-bottom: 5px;font-size: 58px;color: rgba(255, 255, 255, 0.4);font-weight: 700;line-height: 49px;text-align: center;letter-spacing: -1.6px;}
 .profilePage .profileText .textXs{font-size: 16px;color: #333;font-weight: 300;line-height: 28px;text-align: center;letter-spacing: -0.6px;}
 .profilePage .profileText .textXsBold:before{content: "";display: block;width: 28px;height: 1px;margin: 42px auto 11px;background: #000;}
-.profilePage .profileText .textXsBold{font-size: 16px;color: #222222;font-weight: 700;line-height: 28px;text-align: center;letter-spacing: -0.6px;}
+.profilePage .profileText .textXsBold{font-size: 16px;color: #222;font-weight: 700;line-height: 28px;text-align: center;letter-spacing: -0.6px;}
 .profilePage .profileText .textSm{font-size: 24px;color: #666;font-weight: 300;line-height: 55px;text-align: center;letter-spacing: -0.6px;}
 .profilePage .profileText .textSmBold{margin-top: 21px;font-size: 22px;color: #000;font-weight: 300;line-height: 26px;text-align: center;letter-spacing: -0.6px;word-break: keep-all;}
 .profilePage .profileText .textSmBold span{font-weight: 700;}
@@ -113,7 +113,7 @@
 .reviewsPage .subTitle p{text-align: left;}
 .reviewList{position: relative;display: flex;flex-direction: row;flex-wrap: wrap;margin: 119px -20px 0;}
 .reviewList:after{content: "";position: absolute;top: -264px;right: -1px;display: block;width: 349px;height: 269px;background-image: url(../images/img_3d_student.png);background-position: center;background-repeat: no-repeat;box-sizing: border-box;z-index: -1;}
-.reviewList .reviewItem{position: relative;/* width: 400px; */width: calc(33.3% - 40px);margin: 55px 20px 0;background: #fff;}
+.reviewList .reviewItem{position: relative;width: calc(33.3% - 40px);margin: 55px 20px 0;background: #fff;}
 .reviewList .reviewItem:nth-child(-n+3){margin-top: 0;}
 .reviewList .reviewItem:after{content: "";position: absolute;top: calc(50% - 36px - 12px);left: calc(50% - 36px);display: block;width: 72px;height: 72px;background-color: rgba(245, 164, 25, 0.9);background-image: url(../images/icon_more.svg);background-position: center;background-repeat: no-repeat;border-radius: 100%;box-sizing: border-box;opacity: 0;visibility: hidden;transform: translateY(30px);-webkit-transform: translateY(30px);transition-duration: 0.5s;-webkit-transition-duration: 0.5s;pointer-events: none;}
 .reviewList .reviewItem:hover:after, .reviewList .reviewItem:focus:after{opacity: 1;visibility: visible;transform: translateY(0);-webkit-transform: translateY(0);transition-duration: 0.5s;-webkit-transition-duration: 0.5s;}
@@ -146,8 +146,8 @@
 .reviewInfo .bundle .title{font-size: 18px;color: #222;font-weight: 600;line-height: 25px;text-align: left;word-break: keep-all;}
 .reviewInfo .bundle .date{font-size: 13px;color: #ADADAD;font-weight: 400;line-height: 17px;letter-spacing: -0.6px;}
 .reviewText{max-height: 575px;overflow-y: auto;padding-bottom: 20px;border-top: 1px solid #e0e0e0;border-bottom: 1px solid #e0e0e0;box-sizing: border-box;}
-.reviewText strong{margin-top: 30px;display: block;font-size: 15px;color: #222222;font-weight: 600;line-height: 20px;letter-spacing: -0.8px;word-break: keep-all;}
-.reviewText p{font-size: 14px;color: #777777;font-weight: 400;line-height: 23px;letter-spacing: -0.8px;word-break: keep-all;}
+.reviewText strong{margin-top: 30px;display: block;font-size: 15px;color: #222;font-weight: 600;line-height: 20px;letter-spacing: -0.8px;word-break: keep-all;}
+.reviewText p{font-size: 14px;color: #777;font-weight: 400;line-height: 23px;letter-spacing: -0.8px;word-break: keep-all;}
 .reviewText strong + p{margin-top: 10px;}
 
 /* paging */
@@ -168,7 +168,7 @@
 .mapPage .mapText ul li{min-width: 100px;}
 .mapPage .mapText ul li img{display: block;margin: 0 auto 12px;}
 .mapPage .mapText ul li b{display: block;font-size: 15px;color: #000;font-weight: 600;line-height: 24px;text-align: center;}
-.mapPage .mapText ul li p{font-size: 13px;color: #777777;font-weight: 400;line-height: 24px;text-align: center;}
+.mapPage .mapText ul li p{font-size: 13px;color: #777;font-weight: 400;line-height: 24px;text-align: center;}
 .centerPin{position: relative;bottom: 55px;border-radius: 10px;-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);}
 .centerPin:after{content:"";position: absolute;left: 50%;bottom: -12px;width: 23px;height: 12px;margin-left: -12px;background: url(../images/contents/icon_centerPinAfter.png)}
 .centerPin a{display: block;overflow: hidden;background: #F5A419 url(../images/contents/icon_arrow_white.svg) no-repeat right 15px center;border-radius: 10px;text-align: center;}
@@ -180,7 +180,7 @@
 .boardList .boardItem + .boardItem{margin-top: 14px;}
 .boardList .boardItem a{display: flex;justify-content: space-between;align-items: center;flex-direction: row;padding: 25px 0;border: 1px solid #DADADA;box-sizing: border-box;box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05);transition: .3s;-webkit-transition: .3s;}
 .boardList .boardItem .num{width: 108px;font-size: 15px;color: #666;font-weight: 400;text-align: center;transition: .3s;-webkit-transition: .3s;}
-.boardList .boardItem .title{width: calc(100% - 241px);font-size: 18px;color: #222222;font-weight: 500;line-height: 28px;text-align: left;transition: .3s;-webkit-transition: .3s;}
+.boardList .boardItem .title{width: calc(100% - 241px);font-size: 18px;color: #222;font-weight: 500;line-height: 28px;text-align: left;transition: .3s;-webkit-transition: .3s;}
 .boardList .boardItem .date{width: 133px;font-size: 15px;color: #666;font-weight: 400;text-align: center;transition: .3s;-webkit-transition: .3s;}
 .boardList .boardItem a:hover{border: 1px solid #F5A419;box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);}
 .boardList .boardItem a:hover .num, .boardList .boardItem a:hover .title, .boardList .boardItem a:hover .date{color: #F5A419;}
@@ -192,7 +192,7 @@
 .boardViewPage .boardView{margin-top: 50px;}
 .boardListNone{min-height: 430px;padding-top: 158px;box-sizing: border-box;text-align: center;}
 .boardListNone img{display: block;margin: 0 auto 22px;}
-.boardListNone strong{font-size: 20px;color: #222222;font-weight: 700;line-height: 28px;}
+.boardListNone strong{font-size: 20px;color: #222;font-weight: 700;line-height: 28px;}
 .boardListNone p{font-weight: 400;font-size: 16px;color: #666;line-height: 28px;}
 
 .faqPage p{padding: 15px 0;border-top: 1px solid #D9D9D9;border-bottom: 1px solid #D9D9D9;box-sizing: border-box;font-size: 15px;color: #333;font-weight: 400;line-height: 30px;letter-spacing: -0.02em;text-align: center;}
@@ -203,7 +203,7 @@
 .faqList .faqItem .faqTitle:before, .faqList .faqItem .faqTitle:after{content: "";display: inline-block;position: absolute;background-color: #222;transition: .3s;-webkit-transition: .3s;}
 .faqList .faqItem .faqTitle:before{top: 50%;right: 34px;width: 30px;height: 3px;margin-top: -2px;}
 .faqList .faqItem .faqTitle:after{top: 50%;right: 47px;width: 3px;height: 30px;margin-top: -15px;}
-.faqList .faqItem .faqTitle button{display: block;width: 100%;padding: 35px 140px 35px 45px;font-size: 20px;color: #222222;font-weight: 400;line-height: 30px;letter-spacing: -0.02em;text-align: left;word-break: keep-all;transition: .3s;-webkit-transition: .3s;}
+.faqList .faqItem .faqTitle button{display: block;width: 100%;padding: 35px 140px 35px 45px;font-size: 20px;color: #222;font-weight: 400;line-height: 30px;letter-spacing: -0.02em;text-align: left;word-break: keep-all;transition: .3s;-webkit-transition: .3s;}
 .faqList .faqItem .faqTitle button:before{content: "Q. ";position: absolute;vertical-align: 0;}
 .faqList .faqItem .faqTitle button span{display: block;padding-left: 24px;}
 .faqList .faqItem .faqText{display: none;padding: 0 65px 40px 72px;box-sizing: border-box;font-size: 17px;color: #555555;font-weight: 400;line-height: 30px;letter-spacing: -0.02em;word-break: keep-all;}
@@ -267,7 +267,6 @@
 .inputGroup button{position: absolute;top: 5px;right: 5px;}
 .msg{margin-left: 14px;margin-top: 10px;font-size: 14px;color: #F5A419;font-weight: 500;line-height: 17px;}
 
-.classViewPage{}
 .classViewTitle{padding: 38px 0;border-top: 1px solid #E0E0E0;border-bottom: 1px solid #E0E0E0;box-sizing: border-box;text-align: center;}
 .classViewTitle span{font-size: 16px;color: #F5A419;font-weight: 700;line-height: 24px;letter-spacing: -0.2px;}
 .classViewTitle .title{font-size: 28px;color: #000;font-weight: 600;line-height: 39px;letter-spacing: -0.6px;}
@@ -276,7 +275,7 @@
 .listeningArea ul{position: relative;display: flex;align-items: center;justify-content: center;margin-top: 40px;}
 .listeningArea ul li{width: 480px;margin: 40px 80px;background: #fff;border: 1px solid #F1F1F1;box-shadow: 0px 1px 3px rgba(154, 154, 154, 0.25);border-radius: 10px;box-sizing: border-box;text-align: center;}
 .listeningArea ul li + li:before{content: "";position: absolute;top: 0;left: 50%;display: block;width: 1px;height: 100%;border-left: 1px #C5C5C5 dashed;}
-.listeningArea ul li .language{display: block;padding: 21px 0;background: #FAFAFA;border-bottom: 1px solid #F1F1F1;border-radius: 10px 10px 0px 0px;box-sizing: border-box;font-size: 18px;color: #222222;font-weight: 600;text-align: center;letter-spacing: -0.6px;}
+.listeningArea ul li .language{display: block;padding: 21px 0;background: #FAFAFA;border-bottom: 1px solid #F1F1F1;border-radius: 10px 10px 0px 0px;box-sizing: border-box;font-size: 18px;color: #222;font-weight: 600;text-align: center;letter-spacing: -0.6px;}
 .listeningArea ul li .listeningList{display: flex;flex-direction: column;justify-content: center;min-height: 290px;padding: 20px;box-sizing: border-box;}
 .listeningArea ul li .listeningList p{font-size: 25px;color: #555;font-weight: 400;line-height: 50px;text-align: center;letter-spacing: -0.6px;}
 .listeningArea ul li .listeningList p.on{color: #F5A419;font-weight: 800;text-decoration: underline;}
@@ -457,7 +456,6 @@
     .audioBox audio::-webkit-media-controls-time-remaining-display{display: none;}
     .audioBox audio::-webkit-media-controls-panel{padding-left: 100px;}
 }
-
 
 @-webkit-keyframes handsAni {
     0%, 100% {
