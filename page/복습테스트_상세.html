@@ -10,6 +10,11 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/contents.css">
+ 
+    <script src="../assets/js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/lib/slick.min.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    <script src="../assets/js/contents.js"></script>
     
 </head>
 <body>
@@ -155,8 +160,7 @@
                                         <img src="../assets/images/contents/icon_audio_next.png" alt="다음">
                                     </button>
                                 </div>
-                                <audio id="audioPlayer" controls="" preload="metadata" controlslist="nodownload" src="https://video.setn.com/newsvioces/4/20220622/1134459.mp3"
-                                >
+                                <audio id="audioPlayer" controls="false" preload="metadata" controlslist="nodownload" src="https://ccrma.stanford.edu/~jos/mp3/harpsi-cs.mp3">
                                 이 브라우저는 재생 기능을 지원하지 않습니다.
                                 </audio>   
                             </div><!-- audioBox end -->
@@ -195,25 +199,5 @@
         </footer>
     </div><!-- wrap end -->
 
-    <script src="../assets/js/lib/jquery-1.12.4.min.js"></script>
-    <script src="../assets/js/lib/slick.min.js"></script>
-    <script src="../assets/js/ui.js"></script>
-    <script src="../assets/js/contents.js"></script>
-
-    <script>
-        $( document ).ready(function(){
-            $("#btnAudioPlay").on("click",function(){
-            $(this).css("display","none");
-            $("#btnAudioPause").css("display","flex");
-            $("#audioPlayer").get(0).play();
-        });
-            
-        $("#btnAudioPause").on("click",function(){
-            $(this).css("display","none");
-            $("#btnAudioPlay").css("display","flex");
-            $("#audioPlayer").get(0).pause();
-            });
-        });
-      </script>
 </body>
 </html>
