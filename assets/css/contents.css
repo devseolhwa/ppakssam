@@ -274,13 +274,26 @@
 .classViewTitle .date{margin-top: 2px;font-size: 14px;color: #888888;font-weight: 400;line-height: 18px;letter-spacing: -0.6px;}
 .listeningArea{text-align: center;}
 .listeningArea ul{position: relative;display: flex;align-items: center;justify-content: center;margin-top: 40px;}
-.listeningArea ul li{width: 480px;margin: 40px 80px;background: #FFFFFF;border: 1px solid #F1F1F1;box-shadow: 0px 1px 3px rgba(154, 154, 154, 0.25);border-radius: 10px;box-sizing: border-box;text-align: center;}
+.listeningArea ul li{width: 480px;margin: 40px 80px;background: #fff;border: 1px solid #F1F1F1;box-shadow: 0px 1px 3px rgba(154, 154, 154, 0.25);border-radius: 10px;box-sizing: border-box;text-align: center;}
 .listeningArea ul li + li:before{content: "";position: absolute;top: 0;left: 50%;display: block;width: 1px;height: 100%;border-left: 1px #C5C5C5 dashed;}
-.listeningArea ul li p{padding: 70px 20px;border-radius: 0;box-sizing: border-box;font-size: 25px;color: #555;font-weight: 400;line-height: 50px;text-align: center;letter-spacing: -0.6px;}
-.listeningArea ul li p.lan{padding: 9px 0;background: #FAFAFA;border-bottom: 1px solid #F1F1F1;border-radius: 10px 10px 0px 0px;box-sizing: border-box;font-size: 18px;color: #222222;font-weight: 600;text-align: center;letter-spacing: -0.6px;}
-.listeningArea ul li p span{color: #F5A419;font-weight: 800;text-decoration: underline;}
-.listeningArea audio{width: 480px;margin: 40px auto 50px;}
+.listeningArea ul li .language{display: block;padding: 21px 0;background: #FAFAFA;border-bottom: 1px solid #F1F1F1;border-radius: 10px 10px 0px 0px;box-sizing: border-box;font-size: 18px;color: #222222;font-weight: 600;text-align: center;letter-spacing: -0.6px;}
+.listeningArea ul li .listeningList{padding: 70px 20px;box-sizing: border-box;}
+.listeningArea ul li .listeningList p{font-size: 25px;color: #555;font-weight: 400;line-height: 50px;text-align: center;letter-spacing: -0.6px;}
+.listeningArea ul li .listeningList p.on{color: #F5A419;font-weight: 800;text-decoration: underline;}
 
+
+.audioBox{position: relative;max-width: 480px;margin: 40px auto 50px;}
+.audioBox .audioControl{position: absolute;top: 19px;left: 30px;display: flex;align-items: center;height: 14px;z-index: 99;}
+.audioBox .audioControl .btnAudio{display: flex;justify-content: center;align-items: center;width: 14px;height: 14px;margin-left: 15px;/* background: #f7c341; */font-size: 14px;color: #000;}
+.audioBox .audioControl .btnAudio:first-child{margin-left: 0;}
+.audioBox audio{width: 100%;height: 52px;}
+.audioBox audio::-webkit-media-controls-panel{padding-left: 130px;}
+.audioBox audio::-webkit-media-controls-play-button{display: none;position: absolute;top: 19px;left: 50px;padding: 0;margin: 0; width: 1px;height: 14px;color: #fff;z-index: 99;}
+.audioBox audio::-webkit-media-controls-current-time-display,
+.audioBox audio::-webkit-media-controls-time-remaining-display {font-size: 12px;}
+audio::-webkit-media-controls-enclosure {/* border-radius: 5px;background-color: green; */}
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display, audio::-webkit-media-controls-timeline{/* display: none; */}
 
 @media screen and (max-width: 1280px){
     .profilePage .profileText{padding: 71px 0 83px 30%;}
@@ -289,6 +302,8 @@
     .todayEngList .todayEngItem{width: calc(25% - 20px);margin: 45px 10px 0;}
     .reviewsPage:before{top: -120px;right: -100px;z-index: -1;}
     .reviewList:after{display: none;}
+    .listeningArea ul li{width: 100%;margin: 20px 40px;}
+    .listeningArea ul li .listeningList p{font-size: 22px;line-height: 40px;}
 }
 @media screen and (max-width: 1024px){
     .profilePage{padding: 80px 0 60px;}
@@ -318,6 +333,9 @@
     .faqList .faqItem .faqTitle:before{right: 25px;}
     .faqList .faqItem .faqTitle:after{right: 38px;}
     .faqList .faqItem .faqTitle button{padding: 20px 75px 20px 25px;}
+    .listeningArea ul li{margin: 20px;}
+    .listeningArea ul li .listeningList{padding: 54px 20px 65px;}
+    .listeningArea ul li .listeningList p{font-size: 18px;line-height: 30px;}
 }
 @media screen and (max-width: 767px){
     .subTitle{padding: 40px 0 37px;}
@@ -429,6 +447,13 @@
     .joinCheck{padding-left: 31px;}
     .CheckAll{margin-top: 20px;}
     .joinCheck label{font-size: 14px;}
+
+    .listeningArea ul{flex-direction: column;}
+    .listeningArea ul li + li:before{display: none;}
+    .listeningArea ul li .language{padding: 22px 0 23px;font-size: 16px;}
+    .audioBox audio::-webkit-media-controls-current-time-display,
+    .audioBox audio::-webkit-media-controls-time-remaining-display{display: none;}
+    .audioBox audio::-webkit-media-controls-panel{padding-left: 100px;}
 }
 
 
