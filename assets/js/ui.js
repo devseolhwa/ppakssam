@@ -27,12 +27,12 @@ $(document).ready(function() {
     $(".gnbInner ul ul").each(function () {
         $(this).parent("li").addClass("ulHas");
     });
-
-    // popup
-    function popupOpen(openTarget) {
-        $(openTarget).addClass("show");
-    }
-    function popupClose(closeTarget) {
-        $(closeTarget).removeClass("show");
-    }
 });
+
+// popup
+function popupOpen(openTarget) {
+    $(openTarget).addClass("show");
+}
+function popupClose(closeTarget) {
+    $(closeTarget).removeClass("show");
+}
