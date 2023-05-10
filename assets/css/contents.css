@@ -156,9 +156,9 @@
 .paging strong {border: 1px solid #F5A419;color: #F5A419;}
 .paging #pagePrev, .paging #pageNext{display: inline-block;width: auto;box-sizing: border-box;font-weight: 400;}
 .paging #pagePrev{margin: 0 8px 0 0;}
-.paging #pagePrev:before{content: "";display: inline-block;width: 14px;height: 14px;margin-right: 10px;background-image: url(../images/icon_arrow_prev.svg);background-position: center;background-repeat: no-repeat;vertical-align: middle;}
+.paging #pagePrev:before{content: "";display: inline-block;width: 14px;height: 14px;margin-right: 10px;background-image: url(../images/contents/icon_arrow_prev.png);background-position: center;background-repeat: no-repeat;vertical-align: -3px;}
 .paging #pageNext{margin: 0 0 0 8px;}
-.paging #pageNext:after{content: "";display: inline-block;width: 14px;height: 14px;margin-left: 10px;background-image: url(../images/icon_arrow_prev.svg);background-position: center;background-repeat: no-repeat;vertical-align: middle;transform: rotate(180deg);}
+.paging #pageNext:after{content: "";display: inline-block;width: 14px;height: 14px;margin-left: 10px;background-image: url(../images/contents/icon_arrow_prev.png);background-position: center;background-repeat: no-repeat;vertical-align: -3px;transform: rotate(180deg);}
 
 .mapPage{padding: 74px 0 8px;border-top: 1px solid #D9D9D9;box-sizing: border-box;}
 .mapPage .mapText{display: flex;align-items: flex-start;justify-content: space-between;margin-bottom: 60px;}
