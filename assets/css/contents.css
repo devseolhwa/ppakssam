@@ -290,6 +290,13 @@
 .audioBox audio::-webkit-media-controls-time-remaining-display, 
 .audioBox audio::-webkit-media-controls-timeline{opacity: 0;visibility: hidden;}
 
+.errorPage{max-width: 1240px;height: 100vh;margin: 0 auto;padding: 105px 20px 50px;box-sizing: border-box;display: flex;align-items: stretch;flex-direction: row;flex-wrap: wrap;justify-content: space-between;}
+.errorPage .errorText{display: flex;flex-direction: column;align-items: flex-start;text-align: center;}
+.errorPage .errorText strong{margin-top: 67px;font-size: 36px;color: #111;font-weight: 700;line-height: 30px;letter-spacing: -0.5px;word-break: keep-all;}
+.errorPage .errorText p{margin-top: 24px;font-size: 20px;color: #555;font-weight: 400;line-height: 33px;letter-spacing: -0.5px;word-break: keep-all;}
+.errorPage .errorText button{min-width: 200px;margin-top: 34px;}
+.errorPage .errorImg{display: flex;align-items: flex-end;}
+
 @media screen and (max-width: 1280px){
     .profilePage .profileText{padding: 71px 0 83px 30%;}
     .todayEngPage:before{right: -50px;}
@@ -331,6 +338,15 @@
     .listeningArea ul li{margin: 20px;}
     .listeningArea ul li .listeningList{min-height: 210px;}
     .listeningArea ul li .listeningList p{font-size: 18px;line-height: 30px;}
+    
+    .errorPage{padding: 37px 20px;align-content: center;}
+    .errorPage .errorText{width: 100%;align-items: center;}
+    .errorPage .errorText .logo{width: 185px;}
+    .errorPage .errorText strong{margin-top: 27px;font-size: 22px;line-height: 30px;}
+    .errorPage .errorText p{margin-top: 11px;font-size: 15px;line-height: 25px;}
+    .errorPage .errorText button{min-width: 175px;margin-top: 20px;}
+    .errorPage .errorImg{max-width: 350px;margin: 40px auto 0;}
+    
 }
 @media screen and (max-width: 767px){
     .subTitle{padding: 40px 0 37px;}
